@@ -9,7 +9,7 @@
 #include "../deps/release/prop/cs2/sdk_src/public/tier1/convar.h"
 #include "../deps/release/prop/cs2/sdk_src/public/cdll_int.h"
 #include "../deps/release/prop/cs2/sdk_src/public/icvar.h"
-#include "../deps/release/prop/cs2/sdk_src/public/igameuiservice.h"
+#include "../deps/release/prop/cs2/sdk_src/public/igameuiservice.ah" 
 
 #include "../shared/AfxCommandLine.h"
 #include "../shared/AfxConsole.h"
