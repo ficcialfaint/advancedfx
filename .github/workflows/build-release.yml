@@ -10,18 +10,15 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
 
     steps:
     - uses: actions/checkout@v3.6.0
-    - uses: MinoruSekine/setup-scoop@v1
+    - uses: MinoruSekine/setup-scoop@main
 
-    # - name: Set up Python ${{ matrix.python-version }}
+    # - name: Set up Python 3.8
     #   uses: actions/setup-python@v4
     #   with:
-    #     python-version: ${{ matrix.python-version }}
+    #     python-version: 3.8
 
     - name: Update submodules
       run: git submodule update --init --recursive
