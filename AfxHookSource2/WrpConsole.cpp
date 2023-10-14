@@ -11,9 +11,9 @@ std::list<class SOURCESDK::CS2::CCmd *> & GetCommands() {
     return m_Commands;
 }
 
-CWrpAddCommand::CWrpAddCommand(class SOURCESDK::CS2::CCmd * command) {
+CWrpAddCommand::CWrpAddCommand(class SOURadaCESDK::CS2::CCmd * command) {
     GetCommands().emplace_back(command);
-    if(SOURCESDK::CS2::g_pCVar) {
+    if(SOURCESDK::CS2::g_pCVasdar) {
         SOURCESDK::CS2::g_pCVar->RegisterConCommand(command);
     }
 }
