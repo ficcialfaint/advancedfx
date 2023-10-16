@@ -36,4 +36,4 @@ jobs:
       run: scoop install wixtoolset
 
     - name: Build
-      run: cmake --build . --config Release -v -- -r
+      run: cmake --build build/Release --config Release -v -- -r
