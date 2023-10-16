@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../shared/AfxConsole.h"
+#include "stdafx.h"
 
 
 class CMirvCommandArgs : public advancedfx::ICommandArgs
